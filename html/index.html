@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자기 소개 페이지</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <script defer src="../js/index.js"></script>
+</head>
+<body>
+  <header><div>Hi🤗</div></header>
+  <main>
+    <section class="introduce">
+      <div class="inner">
+        <header>자기 소개</header>
+        <ul>
+          <li>이름: 바다</li>
+          <li>사는 곳: 강북구</li>
+          <li>안녕하세요. 저는 세상을 연결하는 바다입니다!🐳💙</li>
+        </ul>
+      </div>
+    </section>
+    <section class="movie-list">
+      <div class="inner">
+        <header>인생 영화 BEST5</header>
+        <table>
+          <caption class="screen-reader-only">인생 영화 BEST5</caption>
+          <thead>
+            <tr>
+              <th scope="col">순위</th>
+              <th scope="col">제목</th>
+              <th scope="col">포스터</th>
+              <th scope="col">줄거리</th>
+              <th scope="col">바로가기</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="rank"><div>1</div></th>
+              <th class="movie-title"><div>해리포터-죽음의 성물 2부</div></th>
+              <th class="movie-poster">
+                <img src="../images/해리포터.jpg" />
+              </th>
+              <th class="movie-story"><div>해리, 론, 그리고 헤르미온느가 호크룩스를 파괴하고 볼드모트와 맞서 싸우는 최종 결전을 앞둔 마법 세계의 긴장과 모험이 담긴 이야기🔮✨  </div></th>
+              <th class="movie-link"><a href="https://serieson.naver.com/v2/movie/8259" alt="해리포터 죽음의 성물 네이버 영화 링크">🖱️클릭!</a></th>
+            </tr>
+            <tr>
+              <th class="rank">2</th>
+              <th class="movie-title"><div>원더</div></th>
+              <th class="movie-poster">
+                <img src="../images/원더.jpg" />
+              </th>
+              <th class="movie-story">
+                <div>안면 기형인 증후군을 가졌지만 누구보다 위트있고 매력있는 어린 소년(어기)이 처음으로 일반 학교에 다니며 겪게 되는 시련과 따돌림, 그리고 용기와 가족의 사랑을 그린 감동적인 이야기👦📚 </div>
+              </th>
+              <th class="movie-link"><a href="https://serieson.naver.com/v2/movie/224297" alt="원더 네이버 영화 링크">🖱️클릭!</a></th>
+            </tr>
+            <tr>
+              <th class="rank"><div>3</div></th>
+              <th class="movie-title"><div>히든 피겨스</div></th>
+              <th class="movie-poster">
+                <img src="../images/히든피겨스.jpg" />
+              </th>
+              <th class="movie-story"><div>인종과 성별의 차별을 뛰어넘어 냉전 시대의 우주 경쟁에서 NASA의 성공을 이끈 아프리카계 미국인 여성 수학자들의 숨겨진 실화를 그린 영화🚀👩‍🔬🌟</div></th>
+              <th class="movie-link"><a href="https://serieson.naver.com/v2/movie/182372" alt="히든 피겨스 네이버 영화 링크">🖱️클릭!</a></th>
+            </tr>
+            <tr>
+              <th class="rank"><div>4</div></th>
+              <th class="movie-title"><div>플립</div></th>
+              <th class="movie-poster">
+                <img src="../images/플립.jpg" />
+              </th>
+              <th class="movie-story"><div>어릴 때부터 서로 다른 감정으로 엇갈린 줄리와 브라이스의 성장과 첫사랑을 그린 로맨틱하고 순수한 사춘기 로맨스 드라마 💑</div></th>
+              <th class="movie-link"><a href="https://serieson.naver.com/v2/movie/162082" alt="플립 네이버 영화 링크">🖱️클릭!</a></th>
+            </tr>
+            <tr>
+              <th class="rank"><div>5</div></th>
+              <th class="movie-title"><div>사바하</div></th>
+              <th class="movie-poster">
+                <img src="../images/사바하.jpg" />
+              </th>
+              <th class="movie-story"><div>16년 전 태어난 쌍둥이 자매와 기괴한 존재 '그것', 신흥 종교 비리를 추적하는 박목사의 미스터리한 사건 조사를 중심으로 펼쳐지는 종교적 오컬트 스릴러🕵️‍♂️📿</div></th>
+              <th class="movie-link"><a href=https://serieson.naver.com/v2/movie/276071" alt="사바하 네이버 영화 링크">🖱️클릭!</a></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="guest-book">
+      <div class="inner">
+        <header>방명록</header>
+        <form action="">
+          <section>
+            <h3>이름 :</h3>
+            <label class="screen-reader-only" for="input-name">이름</label>
+            <input id="input-name" type="text"/>
+          </section>
+          <section class="guest-book__movie-checker-container">
+            <h3>본인 취향 영화</h3>
+            <div>
+              <input id="checkbox-nmovie1" type="checkbox" name="해리포터"/>
+              <label  for="checkbox-nmovie1">해리포터-죽음의 성물</label>
+            </div>
+            <div>
+              <input id="checkbox-movie2" type="checkbox" name="원더"/>
+              <label  for="checkbox-nmovie2">원더</label>
+            </div>
+            <div>
+              <input id="checkbox-movie3" type="checkbox" name="히든피겨스"/>
+              <label  for="checkbox-nmovie3">히든피겨스</label>
+            </div>
+            <div>
+              <input id="checkbox-movie4" type="checkbox" name="플립"/>
+              <label  for="checkbox-nmovie4">플립</label>
+            </div>
+            <div>
+              <input id="checkbox-movie5" type="checkbox" name="사바하"/>
+              <label  for="checkbox-nmovie5">사바하</label>
+            </div>
+          </section>
+          <section class="btn-gruop">
+            <button class="btn-add" type="button">등록</button>
+            <button class="bt-cancle" type="reset">취소</button>
+          </section>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>2024 ⓒ바다(badahertz52)</footer>
+</body>
+</html>
