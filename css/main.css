@@ -1,0 +1,133 @@
+@import "./_reset.css";
+
+:root {
+  --font-size: 1rem;
+  --line-color: rgba(133, 133, 133, 0.603);
+}
+
+body {
+  font-size: var(--font-size);
+}
+
+body > header {
+  height: 60px;
+  text-align: center;
+  padding: 16px 0;
+  box-sizing: border-box;
+  background-color: rgb(237, 237, 237);
+  font-size: 32px;
+  font-weight: bold;
+}
+main header {
+  font-size: calc(var(--font-size) * 1.5);
+  font-weight: bold;
+  margin-bottom: var(--font-size);
+}
+main > section {
+  width: 100vw;
+  border-bottom: 1px solid var(--line-color);
+  .inner {
+    padding: 32px;
+  }
+}
+.introduce {
+  li {
+    margin-bottom: 10px;
+    margin-left: 16px;
+    list-style: inside;
+  }
+}
+.movie-list {
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid var(--line-color);
+  }
+  tr {
+    display: flex;
+  }
+  th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 25%;
+    text-align: left;
+    border: 1px solid var(--line-color);
+  }
+  th:first-child {
+    flex: 5%;
+  }
+  img {
+    width: 40%;
+    height: auto;
+  }
+}
+.guest-book {
+  form {
+    width: 100%;
+    section {
+      display: flex;
+    }
+    section:nth-child(1) {
+      margin-bottom: var(--font-size);
+    }
+    section:nth-child(2) {
+      flex-direction: column;
+      label {
+        width: 200px;
+      }
+    }
+    section:nth-child(3) {
+      width: calc(60px * 2 + 20px);
+      margin-top: var(--font-size);
+      justify-content: space-around;
+      button {
+        width: 60px;
+        background: linear-gradient(to bottom, #4c81de 5%, #184a87 100%);
+        background-color: #4c81de;
+        border: none;
+        border-radius: 10px;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        padding: 5px 10px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #283966;
+      }
+      button:hover {
+        background: linear-gradient(to bottom, #184a87 5%, #4c81de 100%);
+        background-color: #184a87;
+      }
+    }
+
+    h3 {
+      font-size: calc(var(--font-size) * 1.1);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h3:nth-child(1) {
+      margin-right: 10px;
+    }
+  }
+}
+#input-name {
+  width: 300px;
+}
+.guest-book__movie-checker-container {
+  div {
+    margin-bottom: 10px;
+  }
+}
+.screen-reader-only {
+  position: absolute;
+  top: -99999px;
+  left: -9999px;
+}
+
+footer {
+  height: 32px;
+  padding: 10px 0;
+  text-align: center;
+  box-sizing: border-box;
+}
